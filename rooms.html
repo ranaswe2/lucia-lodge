@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms & Cabins | Lucia Lodge, Big Sur — Oceanfront Cliffside Lodging</title>
+<meta name="description" content="Ten updated cabins and rooms perched 300 feet above the ocean at Lucia Lodge, Big Sur. Choose from oceanview cliffside cabins, the honeymoon cottage, partial ocean view, or mountain view rooms.">
+<link rel="canonical" href="https://lucialodge.com/accommodations">
+<link rel="icon" type="image/x-icon" href="media/home/favicon.ico">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rooms & Cabins | Lucia Lodge, Big Sur">
+<meta property="og:description" content="Ten updated cabins and rooms perched 300 feet above the ocean, with views of the Pacific and the Santa Lucia Mountains.">
+<meta property="og:url" content="https://lucialodge.com/accommodations">
+<meta property="og:site_name" content="Lucia Lodge">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rooms & Cabins | Lucia Lodge, Big Sur">
+<meta name="twitter:description" content="Ten updated cabins and rooms perched 300 feet above the ocean, with views of the Pacific and the Santa Lucia Mountains.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lucialodge.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Rooms & Cabins", "item": "https://lucialodge.com/accommodations" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Lucia Lodge Room Categories",
+  "itemListElement": [
+    { "@type": "Product", "position": 1, "name": "Honeymoon Cottage (Room 10)", "description": "Freestanding cliffside cabin with bay windows over the water, gas fireplace, and four-poster queen bed." },
+    { "@type": "Product", "position": 2, "name": "Oceanview Cliffside Cabins (Rooms 7, 8, 9)", "description": "Original 1930s freestanding cabins at the edge of the cliff with gas fireplaces and four-poster queen beds." },
+    { "@type": "Product", "position": 3, "name": "Partial Ocean View Rooms (Rooms 1-4)", "description": "Pillow-top queen rooms set back from the cliff with ocean views toward the south coast." },
+    { "@type": "Product", "position": 4, "name": "Mountain View Rooms (Rooms 5, 6)", "description": "Larger, modern pillow-top queen rooms facing the Santa Lucia Mountains." }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --forest:#284734; --forest-deep:#1c3226; --ocean:#345E73;
+    --sand:#EDE7DD; --cream:#FAF8F4; --copper:#B8703F; --gold:#A8863E;
+    --ink:#2A2A24; --line: rgba(42,42,36,0.12);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --max: 1240px; --radius: 2px;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } *{ animation-duration:.001ms !important; transition-duration:.001ms !important; } }
+  body{ font-family:var(--sans); color:var(--ink); background:var(--cream); line-height:1.6; -webkit-font-smoothing:antialiased; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  button{ font-family:inherit; cursor:pointer; }
+  :focus-visible{ outline:2px solid var(--copper); outline-offset:3px; }
+  h1,h2,h3,h4{ font-family:var(--serif); font-weight:500; color:var(--forest-deep); letter-spacing:0.01em; }
+  .eyebrow{ font-family:var(--sans); font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--copper); font-weight:600; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 32px; }
+  @media (max-width:640px){ .wrap{ padding:0 20px; } }
+  .section-pad{ padding:100px 0; }
+  @media (max-width:640px){ .section-pad{ padding:64px 0; } }
+  .section-head{ max-width:680px; margin-bottom:44px; }
+  .section-head h1, .section-head h2{ font-size:clamp(1.9rem,3.4vw,2.7rem); margin-top:12px; }
+  .section-head p{ margin-top:16px; color:#54544a; font-size:1.02rem; max-width:60ch; }
+
+  /* NAV */
+  /* header.site-nav{ position:fixed; top:0; left:0; right:0; z-index:50; padding:16px 0; background:var(--cream); box-shadow:0 2px 24px rgba(28,50,38,0.08); }
+  header.site-nav .wrap{ display:flex; align-items:center; justify-content:space-between; }
+  .logo{ font-family:var(--serif); font-size:1.5rem; color:var(--forest-deep); letter-spacing:.04em; display:flex; flex-direction:column; line-height:1; }
+  .logo span{ font-family:var(--sans); font-size:.56rem; letter-spacing:.32em; font-weight:500; margin-top:4px; color:var(--ocean); }
+  .nav-links{ display:flex; align-items:center; gap:32px; }
+  .nav-links a{ font-size:.8rem; letter-spacing:.06em; color:var(--forest-deep); opacity:.85; }
+  .nav-links a:hover, .nav-links a.current{ opacity:1; color:var(--copper); }
+  .nav-links a.book-btn{ background:var(--copper); color:#fff !important; padding:10px 20px; border-radius:var(--radius); font-weight:600; opacity:1; }
+  .nav-links a.book-btn:hover{ background:#a05f34; }
+  .nav-toggle{ display:none; background:none; border:none; color:var(--forest-deep); font-size:1.6rem; }
+  @media (max-width:920px){
+    .nav-links{ position:fixed; top:0; right:0; height:100vh; width:min(320px,80vw); background:var(--forest-deep); flex-direction:column; justify-content:center; align-items:flex-start; gap:24px; padding:40px; transform:translateX(100%); transition:transform .4s ease; }
+    .nav-links.open{ transform:translateX(0); }
+    .nav-links a{ color:var(--sand) !important; font-size:1rem; }
+    .nav-toggle{ display:block; z-index:60; }
+  } */
+
+  /* PAGE HERO */
+  .page-hero{ position:relative; height:56vh; min-height:380px; margin-top:0; overflow:hidden; display:flex; align-items:flex-end; }
+  .page-hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .page-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(20,37,28,0.88) 0%, rgba(20,37,28,0.25) 55%, rgba(20,37,28,0.35) 100%); }
+  .page-hero-content{ position:relative; z-index:2; color:#fff; padding:0 32px 50px; max-width:var(--max); margin:0 auto; width:100%; }
+  .page-hero h1{ color:#fff; font-size:clamp(2.2rem,4.6vw,3.6rem); margin-top:10px; }
+  .breadcrumb{ font-size:.78rem; color:rgba(255,255,255,0.75); margin-top:14px; }
+  .breadcrumb a{ color:#fff; }
+
+  /* INTRO */
+  .intro-flex{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
+  @media (max-width:900px){ .intro-flex{ grid-template-columns:1fr; } }
+  .intro-copy p{ margin-bottom:16px; color:#454540; font-size:1.02rem; }
+  .intro-copy .drop{ font-family:var(--serif); font-size:2.6rem; float:left; line-height:.8; padding-right:8px; padding-top:4px; color:var(--copper); }
+  .intro-photo img{ border-radius:var(--radius); }
+  .intro-note{ background:var(--sand); border-left:3px solid var(--copper); padding:18px 22px; margin-top:22px; font-size:.92rem; color:#454540; }
+
+  /* ROOM CATEGORY CARDS */
+  .cat-block{ border-top:1px solid var(--line); padding:80px 0; }
+  .cat-block:first-of-type{ border-top:none; }
+  .cat-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:32px; flex-wrap:wrap; }
+  .cat-head h2{ font-size:clamp(1.7rem,3vw,2.3rem); }
+  .cat-rooms-tag{ font-size:.78rem; letter-spacing:.05em; color:var(--ocean); background:rgba(52,94,115,0.08); padding:6px 14px; border-radius:20px; }
+  .cat-price{ font-family:var(--serif); font-size:1.5rem; color:var(--forest-deep); white-space:nowrap; }
+  .cat-price span{ font-family:var(--sans); font-size:.7rem; color:#7a7a70; letter-spacing:.04em; display:block; }
+  .cat-desc{ max-width:70ch; color:#454540; margin-bottom:30px; font-size:.98rem; }
+  .cat-gallery{ display:grid; grid-template-columns:1.4fr 1fr 1fr; grid-template-rows:1fr 1fr; gap:14px; margin-bottom:28px; }
+  .cat-gallery .g-big{ grid-row:1 / 3; }
+  .cat-gallery img{ width:100%; height:100%; object-fit:cover; border-radius:var(--radius); aspect-ratio:1/1; transition:transform .5s ease; }
+  .cat-gallery .g-big img{ aspect-ratio:auto; height:100%; }
+  .cat-gallery a{ overflow:hidden; border-radius:var(--radius); display:block; }
+  .cat-gallery a:hover img{ transform:scale(1.05); }
+  @media (max-width:760px){
+    .cat-gallery{ grid-template-columns:1fr 1fr; grid-template-rows:auto; }
+    .cat-gallery .g-big{ grid-column:1/3; grid-row:auto; }
+    .cat-gallery .g-big img{ aspect-ratio:16/10; }
+  }
+  .cat-foot{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+  .cat-amenities{ display:flex; gap:10px; flex-wrap:wrap; }
+  .cat-amenities span{ font-size:.68rem; letter-spacing:.04em; text-transform:uppercase; color:var(--forest-deep); background:var(--sand); padding:6px 12px; border-radius:20px; }
+  .btn{ display:inline-block; padding:14px 28px; font-size:.8rem; letter-spacing:.08em; font-weight:600; border-radius:var(--radius); transition:all .25s ease; }
+  .btn-primary{ background:var(--copper); color:#fff; }
+  .btn-primary:hover{ background:#a05f34; }
+
+  /* LOCATION GUIDE */
+  .guide-section{ background:var(--sand); }
+  .guide-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:12px; }
+  @media (max-width:860px){ .guide-grid{ grid-template-columns:1fr; } }
+  .guide-item{ background:var(--sand); padding:34px 30px; }
+  .guide-item .rooms-no{ font-family:var(--serif); font-size:1.6rem; color:var(--copper); margin-bottom:10px; }
+  .guide-item h4{ font-size:1.1rem; margin-bottom:10px; }
+  .guide-item p{ font-size:.9rem; color:#5c5c52; }
+
+  /* FINAL CTA */
+  .final-cta{ background:linear-gradient(120deg, var(--forest-deep), var(--ocean)); color:#fff; text-align:center; padding:100px 0; }
+  .final-cta h2{ color:#fff; font-size:clamp(2rem,3.6vw,2.8rem); }
+  .final-cta p{ margin:14px 0 30px; color:rgba(255,255,255,0.82); max-width:50ch; margin-left:auto; margin-right:auto; }
+  .cta-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .btn-outline{ border:1px solid rgba(255,255,255,0.55); color:#fff; }
+  .btn-outline:hover{ background:rgba(255,255,255,0.12); }
+
+  /* FOOTER */
+  footer{ background:var(--forest-deep); color:rgba(237,231,221,0.75); padding:60px 0 26px; font-size:.86rem; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:44px; }
+  @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  .footer-grid h5{ color:#fff; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; margin-bottom:14px; }
+  .footer-grid li{ margin-bottom:9px; }
+  .footer-grid a:hover{ color:#fff; }
+  .footer-logo{ font-family:var(--serif); font-size:1.4rem; color:#fff; margin-bottom:10px; }
+  .footer-bottom{ border-top:1px solid rgba(237,231,221,0.15); padding-top:22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:.75rem; }
+
+  .mobile-book{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:55; background:var(--forest-deep); padding:14px 20px; box-shadow:0 -4px 16px rgba(0,0,0,0.2); }
+  .mobile-book a{ display:block; text-align:center; background:var(--copper); color:#fff; padding:14px; border-radius:var(--radius); font-size:.85rem; letter-spacing:.06em; font-weight:600; }
+  @media (max-width:920px){ .mobile-book{ display:block; } body{ padding-bottom:74px; } }
+</style>
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-nav" id="siteNav">
+  <div class="wrap">
+    <a href="index.html" class="logo">Lucia Lodge<span>BIG SUR · CALIFORNIA</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="rooms.html">Rooms</a>
+      <a href="RatesReservation.html">Rates &amp; Reservations</a>
+      <a href="FoodDining.html">Food &amp; Dining</a>
+      <a href="activities.html">Activities</a>
+      <a href="gallery.html">Gallery</a>
+      <!-- Resources Dropdown -->
+      <div class="dropdown" id="resourcesDropdown">
+        <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+        <div class="dropdown-content" role="menu">
+          <a href="about.html" role="menuitem">About Us</a>
+          <a href="directions.html" role="menuitem">Directions</a>
+          <a href="faq.html" role="menuitem">FAQ</a>
+          <a href="history.html" role="menuitem">History</a>
+          <a href="contact.html" role="menuitem">Contact Us</a>
+          <a href="blog.html" role="menuitem">Blogs</a>
+        </div>
+      </div>
+      
+      <a href="https://lucialodge.client.innroad.com/" class="book-btn">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero" aria-label="Rooms and cabins at Lucia Lodge">
+    <img src="media/rooms/room.jpg" alt="Ocean view from a bed at Lucia Lodge, looking out over the cliffs and Pacific Ocean">
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Rooms &amp; Cabins</p>
+      <p class="eyebrow" style="color:var(--sand);">Accommodations</p>
+      <h1>Ten Rooms, 300 Feet Above the Ocean</h1>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section-pad" id="rooms">
+    <div class="wrap">
+      <div class="intro-flex">
+        <div class="intro-copy">
+          <p><span class="drop">L</span>ucia Lodge offers ten updated cabins and rooms isolated on a cliff 300 feet above the ocean. Guests enjoy a view overlooking a natural bay extending to a breathtaking vista of the south coast. Some rooms face landward, taking in the striking Santa Lucia Mountains &mdash; named after St. Lucy by Spanish explorer Sebastian Vizcaino in 1602.</p>
+          <p>The accommodations are rustic in nature and offer neither telephones nor television. Rather, guests are treated to a romantic setting amid ever-changing seascapes and views of majestic mountains. It is not uncommon to see passing whales, sea otters playing in giant kelp beds, and soaring birds. The ever-present sound of breaking waves is both exhilarating and, at the same time, relaxing.</p>
+          <p>A sitting area at the edge of the cliff offers all guests a splendid view of the ocean directly below, with a picnic area located just below the cabins at the edge of the cliff.</p>
+          <div class="intro-note">Rooms are rustic and unplugged by design &mdash; no phones or TVs. Free WiFi and a complimentary grab-and-go breakfast are available to every guest each morning.</div>
+        </div>
+        <div class="intro-photo">
+          <img src="media/rooms/new/honeymoon-1.png" alt="Vaulted wood ceiling and ocean-facing sitting area in the Lucia Lodge honeymoon cottage">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HONEYMOON COTTAGE -->
+  <section class="cat-block" aria-labelledby="honeymoon-heading">
+    <div class="wrap">
+      <div class="cat-head">
+        <div>
+          <p class="eyebrow">Room 10</p>
+          <h2 id="honeymoon-heading">The Honeymoon Cottage</h2>
+        </div>
+        <div class="cat-price">From $429<span>per night</span></div>
+      </div>
+      <p class="cat-desc">The cabin closest to the edge of the cliff is our largest accommodation, with bay windows looking right over the water. Built by the Harlan family in the 1930s, it carries a gas fireplace and a four-poster queen bed &mdash; the most spectacular ocean view on the property, with a historic feel throughout.</p>
+      <div class="cat-gallery">
+        <a href="" class="g-big"><img src="media/rooms/new/honeymoon-2.png" alt="Honeymoon cottage bedroom at Lucia Lodge with four-poster queen bed and black entry door" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/honeymoon-3.png" alt="Vaulted wood-beam ceiling and ocean-view sitting area in the Lucia Lodge honeymoon cottage" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/honeymoon-1.png" alt="Bathroom with tiled walk-in shower in a Lucia Lodge cliffside cabin" loading="lazy"></a>
+        <a href=""><img src="media/rooms/accommodationscab10b.jpg" alt="Vaulted wood-beam ceiling and ocean-view sitting area in the Lucia Lodge honeymoon cottage" loading="lazy"></a>
+        <a href=""><img src="media/rooms/accommodationscab10a.jpg" alt="Bathroom with tiled walk-in shower in a Lucia Lodge cliffside cabin" loading="lazy"></a>
+      </div>
+      <div class="cat-foot">
+        <div class="cat-amenities"><span>Four-Poster Queen Bed</span><span>Gas Fireplace</span><span>Ocean View</span><span>Historic 1930s Cabin</span></div>
+        <a href="https://lucialodge.client.innroad.com/" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OCEANVIEW LUXURY -->
+  <section class="cat-block" aria-labelledby="oceanview-heading">
+    <div class="wrap">
+      <div class="cat-head">
+        <div>
+          <p class="eyebrow">Rooms 7, 8 &amp; 9</p>
+          <h2 id="oceanview-heading">Oceanview Cliffside Cabins</h2>
+        </div>
+        <div class="cat-price">From $389<span>per night</span></div>
+      </div>
+      <p class="cat-desc">Four freestanding cabins sit near the edge of the cliffs &mdash; the original accommodations built by the Harlan family in the 1930s. Each has a gas fireplace and a four-poster queen bed, offering some of the most spectacular ocean views on the entire coast, with a distinctly historic feel.</p>
+      <div class="cat-gallery">
+        <a href="" class="g-big"><img src="media/rooms/new/oceanview-1.png" alt="Wide view of an Oceanview Luxury cabin at Lucia Lodge with vaulted wood ceiling and ocean-facing windows" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/oceanview-2.png" alt="Bed with ocean and mountain view through the window of an Oceanview Luxury cabin at Lucia Lodge" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/oceanview-3.png" alt="Sitting area and bed in an Oceanview Luxury cabin at Lucia Lodge" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/oceanview-4.png" alt="Bed with ocean and mountain view through the window of an Oceanview Luxury cabin at Lucia Lodge" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/oceanview-5.png" alt="Sitting area and bed in an Oceanview Luxury cabin at Lucia Lodge" loading="lazy"></a>
+      </div>
+      <div class="cat-foot">
+        <div class="cat-amenities"><span>Four-Poster Queen Bed</span><span>Gas Fireplace</span><span>Cliff-Edge Ocean View</span></div>
+        <a href="https://lucialodge.client.innroad.com/" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTIAL OCEAN VIEW -->
+  <section class="cat-block" aria-labelledby="partial-heading">
+    <div class="wrap">
+      <div class="cat-head">
+        <div>
+          <p class="eyebrow">Rooms 1, 2, 3 &amp; 4</p>
+          <h2 id="partial-heading">Partial Ocean View Rooms</h2>
+        </div>
+        <div class="cat-price">From $299<span>per night</span></div>
+      </div>
+      <p class="cat-desc">At the other end of the lodge, four standard rooms sit closer to the mountains, each with a pillow-top queen bed and hypoallergenic comforter. Rooms 1&ndash;3 also enjoy an ocean view, set back a bit further from the cliff edge.</p>
+      <div class="cat-gallery">
+        <a href="" class="g-big"><img src="media/rooms/new/partial-ocean-view-1.png" alt="Honeymoon cottage bedroom at Lucia Lodge with four-poster queen bed and black entry door" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/partial-ocean-view-2.png" alt="Vaulted wood-beam ceiling and ocean-view sitting area in the Lucia Lodge honeymoon cottage" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/partial-ocean-view-3.png" alt="Bathroom with tiled walk-in shower in a Lucia Lodge cliffside cabin" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/partial-ocean-view-4.png" alt="Vaulted wood-beam ceiling and ocean-view sitting area in the Lucia Lodge honeymoon cottage" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/partial-ocean-view-5.png" alt="Bathroom with tiled walk-in shower in a Lucia Lodge cliffside cabin" loading="lazy"></a>
+      </div>
+      <div class="cat-foot">
+        <div class="cat-amenities"><span>Pillow-Top Queen Bed</span><span>Hypoallergenic Comforter</span><span>Partial Ocean View</span></div>
+        <a href="https://lucialodge.client.innroad.com/" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOUNTAIN VIEW -->
+  <section class="cat-block" aria-labelledby="mountain-heading">
+    <div class="wrap">
+      <div class="cat-head">
+        <div>
+          <p class="eyebrow">Rooms 5 &amp; 6</p>
+          <h2 id="mountain-heading">Mountain View Rooms</h2>
+        </div>
+        <div class="cat-price">From $269<span>per night</span></div>
+      </div>
+      <p class="cat-desc">At the mid-point of the lodge are our two most modern rooms &mdash; larger, with a pillow-top queen bed and hypoallergenic comforter. These rooms don't face the ocean, but offer a spectacular view of the Santa Lucia Mountains. A sofa-bed option is available for a third guest.</p>
+      <div class="cat-gallery">
+        <a href="" class="g-big"><img src="media/rooms/new/mountainview-1.png" alt="Mountain view room at Lucia Lodge with queen bed and coastal artwork" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/mountainview-2.png" alt="Mountain view room at Lucia Lodge with exposed wood beam ceiling and sofa bed" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/mountainview-3.png" alt="View of the Santa Lucia Mountains from a Lucia Lodge guest room window" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/mountainview-4.png" alt="Mountain view room at Lucia Lodge with exposed wood beam ceiling and sofa bed" loading="lazy"></a>
+        <a href=""><img src="media/rooms/new/mountainview-5.png" alt="View of the Santa Lucia Mountains from a Lucia Lodge guest room window" loading="lazy"></a>
+      </div>
+      <div class="cat-foot">
+        <div class="cat-amenities"><span>Pillow-Top Queen Bed</span><span>Optional Sofa Bed</span><span>Mountain View</span></div>
+        <a href="https://lucialodge.client.innroad.com/" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOM LOCATION GUIDE -->
+  <section class="section-pad guide-section" aria-labelledby="guide-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Where You'll Stay</p>
+        <h2 id="guide-heading">A Quick Guide to the Property Layout</h2>
+        <p>Lucia Lodge is arranged in three groupings along the cliff, from the ocean's edge inland toward the mountains.</p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-item">
+          <div class="rooms-no">Rooms 7&ndash;10</div>
+          <h4>The Cliffside Cabins</h4>
+          <p>Four freestanding cabins built by the Harlan family in the 1930s, right at the cliff's edge with the widest ocean views. Room 10 is the honeymoon cottage.</p>
+        </div>
+        <div class="guide-item">
+          <div class="rooms-no">Rooms 1&ndash;4</div>
+          <h4>Standard Rooms</h4>
+          <p>Set back further from the cliff, closer to the mountains. Rooms 1&ndash;3 still enjoy an ocean view.</p>
+        </div>
+        <div class="guide-item">
+          <div class="rooms-no">Rooms 5&ndash;6</div>
+          <h4>Modern Rooms</h4>
+          <p>Located at the mid-point of the lodge, these are our largest and newest rooms, facing the Santa Lucia Mountains.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="book" aria-labelledby="cta-heading">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--sand);">Reserve Your Stay</p>
+      <h2 id="cta-heading">Rooms Are Limited on This Stretch of Coast</h2>
+      <p>Book direct for the best available rate and the most flexible cancellation policy.</p>
+      <div class="cta-row">
+        <a href="https://lucialodge.client.innroad.com/" class="btn btn-primary">Reserve Now</a>
+        <a href="tel:+18318770926" class="btn btn-outline">Call (831) 877-0926</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Lucia Lodge</div>
+        <p>62400 Highway 1<br>Big Sur, CA 93920</p>
+        <p style="margin-top:12px;">(831) 877-0926</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Plan Your Stay</h5>
+        <ul>
+          <li><a href="RatesReservation.html">Reservations</a></li>
+          <li><a href="directions.html">Directions</a></li>
+          <li><a href="https://roads.dot.ca.gov/">Road Conditions</a></li>
+          <li><a href="RatesReservation.html">Cancellation Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:stay@lucialodge.com">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Lucia Lodge. All rights reserved. Family owned since 1937.</span>
+      <span>Design concept for lucialodge.com</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-book"><a href="#book">Check Availability</a></div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+<script src="nav.js"></script>
+</body>
+</html>

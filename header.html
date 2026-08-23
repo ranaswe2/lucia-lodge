@@ -1,0 +1,92 @@
+
+<style>
+    
+  /* ============ NAV ============ */
+  header.site-nav{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    padding:22px 0;
+    transition: background 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease;
+  }
+  header.site-nav .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  header.site-nav.scrolled{
+    background:var(--cream);
+    padding:14px 0;
+    box-shadow:0 2px 24px rgba(28,50,38,0.08);
+  }
+  .logo{
+    font-family:var(--serif);
+    font-size:1.6rem;
+    color:#fff;
+    letter-spacing:0.04em;
+    transition:color 0.35s ease;
+    display:flex; flex-direction:column; line-height:1;
+  }
+  .logo span{
+    font-family:var(--sans);
+    font-size:0.58rem;
+    letter-spacing:0.35em;
+    font-weight:500;
+    margin-top:4px;
+    color:rgba(255,255,255,0.75);
+    transition:color 0.35s ease;
+  }
+  header.site-nav.scrolled .logo{ color:var(--forest-deep); }
+  header.site-nav.scrolled .logo span{ color:var(--ocean); }
+
+  .nav-links{ display:flex; align-items:center; gap:34px; }
+  .nav-links a{
+    font-size:0.82rem;
+    letter-spacing:0.06em;
+    color:#fff;
+    transition:color 0.35s ease, opacity 0.2s ease;
+    opacity:0.92;
+  }
+  .nav-links a:hover{ opacity:1; }
+  header.site-nav.scrolled .nav-links a{ color:var(--forest-deep); }
+  .nav-links a.book-btn{
+    background:var(--copper);
+    color:#fff !important;
+    padding:11px 22px;
+    border-radius:var(--radius);
+    letter-spacing:0.08em;
+    font-weight:600;
+    opacity:1;
+  }
+  .nav-links a.book-btn:hover{ background:#a05f34; }
+
+  .nav-toggle{
+    display:none;
+    background:none; border:none; color:#fff;
+    font-size:1.6rem; line-height:1;
+  }
+  header.site-nav.scrolled .nav-toggle{ color:var(--forest-deep); }
+
+  @media (max-width:920px){
+    .nav-links{
+      position:fixed; top:0; right:0; height:100vh; width:min(320px,80vw);
+      background:var(--forest-deep); flex-direction:column; justify-content:center;
+      align-items:flex-start; gap:26px; padding:40px;
+      transform:translateX(100%); transition:transform 0.4s ease;
+    }
+    .nav-links.open{ transform:translateX(0); }
+    .nav-links a{ color:var(--sand) !important; font-size:1rem; }
+    .nav-toggle{ display:block; z-index:60; }
+  }
+</style>
+<header class="site-nav" id="siteNav">
+  <div class="wrap">
+    <a href="#top" class="logo">Lucia Lodge<span>BIG SUR · CALIFORNIA</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="rooms.html">Rooms</a>
+      <a href="activities.html">Activities</a>
+      <a href="RatesReservation.html">Reservation</a>
+      <a href="FoodDining.html">Food & Dining</a>
+      <a href="history.html">History</a>
+      <a href="about.html">About Us</a>
+      <a href="https://lucialodge.client.innroad.com/" class="book-btn">Book Now</a>
+    </nav>
+  </div>
+</header>

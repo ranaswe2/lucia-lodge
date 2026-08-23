@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rates & Reservations | Lucia Lodge, Big Sur</title>
+<meta name="description" content="Book your stay at Lucia Lodge online. Reservation policies, cancellation terms, check-in and check-out times, and current Highway 1 road conditions for Big Sur.">
+<link rel="canonical" href="https://lucialodge.com/rates-and-reservations">
+<link rel="icon" type="image/x-icon" href="media/home/favicon.ico">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rates & Reservations | Lucia Lodge, Big Sur">
+<meta property="og:description" content="Book your stay at Lucia Lodge online, plus reservation policies, cancellation terms, and check-in details.">
+<meta property="og:url" content="https://lucialodge.com/rates-and-reservations">
+<meta property="og:site_name" content="Lucia Lodge">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rates & Reservations | Lucia Lodge, Big Sur">
+<meta name="twitter:description" content="Book your stay at Lucia Lodge online, plus reservation policies, cancellation terms, and check-in details.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lucialodge.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Rates & Reservations", "item": "https://lucialodge.com/rates-and-reservations" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Lucia Lodge's cancellation policy?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cancellations made 7 or more days before arrival are refundable, subject to a processing fee, or can be converted to a gift certificate at no fee. Cancellations made 2-7 days before arrival can only be converted to a gift certificate at half the deposit value. Cancellations within 2 days of arrival, no-shows, and early departures do not receive a refund." }
+    },
+    {
+      "@type": "Question",
+      "name": "What time is check-in and check-out at Lucia Lodge?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Check-in begins at 4pm, though early check-in may be available if a room is vacant and clean. Check-out is at 11am. Late check-outs up to 3pm are charged a half-day rate; after 3pm a full day rate applies." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are pets allowed at Lucia Lodge?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, pets are not allowed at Lucia Lodge." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check Highway 1 road conditions before arriving?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Call the CalTrans Road Info Hotline at 1-800-427-7623 (1-800-427-ROAD) for current road conditions on Highway 1." }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --forest:#284734; --forest-deep:#1c3226; --ocean:#345E73;
+    --sand:#EDE7DD; --cream:#FAF8F4; --copper:#B8703F; --gold:#A8863E;
+    --ink:#2A2A24; --line: rgba(42,42,36,0.12);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --max: 1240px; --radius: 2px;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } *{ animation-duration:.001ms !important; transition-duration:.001ms !important; } }
+  body{ font-family:var(--sans); color:var(--ink); background:var(--cream); line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding-top: 70px; /* Space for fixed navbar */ }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  button{ font-family:inherit; cursor:pointer; }
+  :focus-visible{ outline:2px solid var(--copper); outline-offset:3px; }
+  h1,h2,h3,h4{ font-family:var(--serif); font-weight:500; color:var(--forest-deep); letter-spacing:0.01em; }
+  .eyebrow{ font-family:var(--sans); font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--copper); font-weight:600; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 32px; }
+  @media (max-width:640px){ .wrap{ padding:0 20px; } }
+  .section-pad{ padding:90px 0; }
+  @media (max-width:640px){ .section-pad{ padding:60px 0; } }
+  .section-head{ max-width:700px; margin-bottom:40px; }
+  .section-head h1, .section-head h2{ font-size:clamp(1.8rem,3.2vw,2.5rem); margin-top:12px; }
+  .section-head p{ margin-top:14px; color:#54544a; font-size:1rem; max-width:64ch; }
+
+  /* header.site-nav{ position:fixed; top:0; left:0; right:0; z-index:50; padding:16px 0; background:var(--cream); box-shadow:0 2px 24px rgba(28,50,38,0.08); }
+  header.site-nav .wrap{ display:flex; align-items:center; justify-content:space-between; }
+  .logo{ font-family:var(--serif); font-size:1.5rem; color:var(--forest-deep); letter-spacing:.04em; display:flex; flex-direction:column; line-height:1; }
+  .logo span{ font-family:var(--sans); font-size:.56rem; letter-spacing:.32em; font-weight:500; margin-top:4px; color:var(--ocean); }
+  .nav-links{ display:flex; align-items:center; gap:32px; }
+  .nav-links a{ font-size:.8rem; letter-spacing:.06em; color:var(--forest-deep); opacity:.85; }
+  .nav-links a:hover, .nav-links a.current{ opacity:1; color:var(--copper); }
+  .nav-links a.book-btn{ background:var(--copper); color:#fff !important; padding:10px 20px; border-radius:var(--radius); font-weight:600; opacity:1; }
+  .nav-links a.book-btn:hover{ background:#a05f34; }
+  .nav-toggle{ display:none; background:none; border:none; color:var(--forest-deep); font-size:1.6rem; }
+  @media (max-width:920px){
+    .nav-links{ position:fixed; top:0; right:0; height:100vh; width:min(320px,80vw); background:var(--forest-deep); flex-direction:column; justify-content:center; align-items:flex-start; gap:24px; padding:40px; transform:translateX(100%); transition:transform .4s ease; }
+    .nav-links.open{ transform:translateX(0); }
+    .nav-links a{ color:var(--sand) !important; font-size:1rem; }
+    .nav-toggle{ display:block; z-index:60; }
+  } */
+
+  .page-hero{ position:relative; height:48vh; min-height:340px; overflow:hidden; display:flex; align-items:flex-end;
+    background: radial-gradient(ellipse at 25% 20%, rgba(184,112,63,0.3), transparent 55%), linear-gradient(180deg, #4a7a63 0%, #2f5a44 35%, #1c3226 75%, #14251c 100%); }
+  .page-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(20,37,28,0.85) 0%, rgba(20,37,28,0.15) 55%, rgba(20,37,28,0.3) 100%); }
+  .page-hero-content{ position:relative; z-index:2; color:#fff; padding:0 32px 50px; max-width:var(--max); margin:0 auto; width:100%; }
+  .page-hero h1{ color:#fff; font-size:clamp(2.1rem,4.4vw,3.4rem); margin-top:10px; }
+  .breadcrumb{ font-size:.78rem; color:rgba(255,255,255,0.75); margin-top:14px; }
+  .breadcrumb a{ color:#fff; }
+  .page-hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+
+  /* BOOKING BOX */
+  .book-box{ background:var(--forest-deep); color:var(--sand); border-radius:var(--radius); padding:48px 44px; display:grid; grid-template-columns:1.3fr 1fr; gap:44px; }
+  @media (max-width:820px){ .book-box{ grid-template-columns:1fr; padding:36px 26px; } }
+  .book-box h2{ color:#fff; font-size:1.8rem; margin-bottom:14px; }
+  .book-box p{ color:rgba(237,231,221,0.85); font-size:.95rem; margin-bottom:18px; }
+  .road-note{ background:rgba(255,255,255,0.06); border-left:3px solid var(--gold); padding:14px 18px; font-size:.86rem; margin-bottom:22px; }
+  .road-note strong{ color:var(--gold); display:block; font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:4px; }
+  .book-side{ display:flex; flex-direction:column; justify-content:center; gap:18px; }
+  .book-side .btn-primary{ text-align:center; }
+  .contact-line{ font-size:.9rem; }
+  .contact-line span{ display:block; color:rgba(237,231,221,0.6); font-size:.72rem; letter-spacing:.05em; text-transform:uppercase; margin-bottom:4px; }
+  .contact-line a{ color:#fff; text-decoration:underline; text-decoration-color:rgba(255,255,255,0.3); }
+
+  .btn{ display:inline-block; padding:15px 30px; font-size:.8rem; letter-spacing:.08em; font-weight:600; border-radius:var(--radius); transition:all .25s ease; }
+  .btn-primary{ background:var(--copper); color:#fff; }
+  .btn-primary:hover{ background:#a05f34; }
+  .btn-outline{ border:1px solid rgba(255,255,255,0.55); color:#fff; }
+  .btn-outline:hover{ background:rgba(255,255,255,0.12); }
+
+  /* POLICY LIST */
+  .why-section{ background:var(--sand); }
+  .policy-list{ display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; margin-bottom:36px; }
+  .policy-list li{ background:var(--cream); padding:18px 24px; display:flex; gap:14px; align-items:flex-start; font-size:.94rem; color:#454540; }
+  .policy-list li::before{ content:"—"; color:var(--copper); font-weight:600; flex-shrink:0; }
+
+  /* CANCELLATION TIMELINE */
+  .cancel-box{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:36px; margin-bottom:20px; }
+  .cancel-box h3{ font-size:1.4rem; margin-bottom:8px; }
+  .cancel-box > p{ color:#5c5c52; font-size:.92rem; margin-bottom:26px; max-width:70ch; }
+  .cancel-tiers{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:760px){ .cancel-tiers{ grid-template-columns:1fr; } }
+  .tier{ border-top:3px solid var(--copper); padding-top:16px; }
+  .tier:nth-child(2){ border-top-color:var(--gold); }
+  .tier:nth-child(3){ border-top-color:#9a4a3a; }
+  .tier .tier-label{ font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--ocean); margin-bottom:8px; }
+  .tier p{ font-size:.9rem; color:#454540; }
+  .fine-print{ font-size:.86rem; color:#5c5c52; margin-top:24px; padding-top:20px; border-top:1px solid var(--line); }
+  .fine-print p{ margin-bottom:10px; }
+
+  .thanks-note{ font-family:var(--serif); font-style:italic; font-size:1.15rem; color:var(--forest-deep); text-align:center; max-width:60ch; margin:0 auto; padding:44px 0 0; }
+
+  /* CHECK-IN GRID (reuse essentials pattern) */
+  .essentials-list{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+  @media (max-width:700px){ .essentials-list{ grid-template-columns:1fr; } }
+  .essential-item{ background:var(--cream); padding:24px 26px; }
+  .essential-item strong{ display:block; color:var(--forest-deep); font-family:var(--serif); font-weight:500; font-size:1.05rem; margin-bottom:4px; }
+  .essential-item p{ font-size:.9rem; color:#454540; }
+
+  /* VISITING RULES */
+  .rules-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  @media (max-width:820px){ .rules-grid{ grid-template-columns:1fr; } }
+  .rule-card{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:28px; }
+  .rule-card .icon{ font-size:1.4rem; color:var(--copper); margin-bottom:12px; display:block; }
+  .rule-card h4{ font-size:1.1rem; margin-bottom:8px; }
+  .rule-card p{ font-size:.88rem; color:#5c5c52; }
+
+  .final-cta{ background:linear-gradient(120deg, var(--forest-deep), var(--ocean)); color:#fff; text-align:center; padding:100px 0; }
+  .final-cta h2{ color:#fff; font-size:clamp(2rem,3.6vw,2.8rem); }
+  .final-cta p{ margin:14px 0 30px; color:rgba(255,255,255,0.82); max-width:50ch; margin-left:auto; margin-right:auto; }
+  .cta-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+
+  footer{ background:var(--forest-deep); color:rgba(237,231,221,0.75); padding:60px 0 26px; font-size:.86rem; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:44px; }
+  @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  .footer-grid h5{ color:#fff; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; margin-bottom:14px; }
+  .footer-grid li{ margin-bottom:9px; }
+  .footer-grid a:hover{ color:#fff; }
+  .footer-logo{ font-family:var(--serif); font-size:1.4rem; color:#fff; margin-bottom:10px; }
+  .footer-bottom{ border-top:1px solid rgba(237,231,221,0.15); padding-top:22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:.75rem; }
+
+  .mobile-book{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:55; background:var(--forest-deep); padding:14px 20px; box-shadow:0 -4px 16px rgba(0,0,0,0.2); }
+  .mobile-book a{ display:block; text-align:center; background:var(--copper); color:#fff; padding:14px; border-radius:var(--radius); font-size:.85rem; letter-spacing:.06em; font-weight:600; }
+  @media (max-width:920px){ .mobile-book{ display:block; } body{ padding-bottom:74px; } }
+</style>
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-nav" id="siteNav">
+  <div class="wrap">
+    <a href="index.html" class="logo">Lucia Lodge<span>BIG SUR · CALIFORNIA</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="rooms.html">Rooms</a>
+      <a href="RatesReservation.html">Rates &amp; Reservations</a>
+      <a href="FoodDining.html">Food &amp; Dining</a>
+      <a href="activities.html">Activities</a>
+      <a href="gallery.html">Gallery</a>
+      <!-- Resources Dropdown -->
+      <div class="dropdown" id="resourcesDropdown">
+        <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+        <div class="dropdown-content" role="menu">
+          <a href="about.html" role="menuitem">About Us</a>
+          <a href="directions.html" role="menuitem">Directions</a>
+          <a href="faq.html" role="menuitem">FAQ</a>
+          <a href="history.html" role="menuitem">History</a>
+          <a href="contact.html" role="menuitem">Contact Us</a>
+          <a href="blog.html" role="menuitem">Blogs</a>
+        </div>
+      </div>
+      
+      <a href="https://lucialodge.client.innroad.com/" class="book-btn">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero" aria-label="Rates and reservations at Lucia Lodge">
+    <img src="media/reservations/ratestop.jpg" alt="Ocean view from a bed at Lucia Lodge, looking out over the cliffs and Pacific Ocean">
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Rates &amp; Reservations</p>
+      <p class="eyebrow" style="color:var(--sand);">Book Your Stay</p>
+      <h1>Rates &amp; Reservations</h1>
+    </div>
+  </section>
+
+  <!-- BOOKING BOX -->
+  <section class="section-pad" id="book-section">
+    <div class="wrap">
+      <div class="book-box">
+        <div>
+          <p class="eyebrow" style="color:var(--gold);">Find and Book Your Room</p>
+          <h2>All Reservations Are Made Online</h2>
+          <p>Room rates vary according to season &mdash; check the rate for the dates you're interested in with the link below.</p>
+          <div class="road-note"><strong>Current Conditions</strong>CalTrans Road Info Hotline: 1-800-427-7623 (1-800-427-ROAD). Check before you head down Highway 1.</div>
+          <a href="#" class="btn btn-primary">Book Your Room Online Now</a>
+        </div>
+        <div class="book-side">
+          <div class="contact-line"><span>Questions? Email Us</span><a href="mailto:info@lucia-lodge.com">info@lucia-lodge.com</a></div>
+          <div class="contact-line"><span>Phone (Limited Hours &mdash; We Return Voicemails Within 1 Business Day)</span><a href="tel:+18318770926">(831) 877-0926</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION POLICIES -->
+  <section class="section-pad why-section" aria-labelledby="policy-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Please Read Before Booking</p>
+        <h2 id="policy-heading">Reservation Policies</h2>
+      </div>
+
+      <ul class="policy-list">
+        <li>All reservations must be guaranteed with a credit card. We require an advanced deposit for the term of your stay and tax, charged at the time the reservation is made.</li>
+        <li>No rollaways are available for any room.</li>
+        <li>No pets are allowed.</li>
+        <li>Free limited WiFi is available to all rooms.*</li>
+      </ul>
+
+      <div class="cancel-box">
+        <h3>Cancellation Policy</h3>
+        <p>We get it &mdash; life happens, and sometimes plans don't work out. When that happens, these are our firm policies for all guests and all reservations. Please read them carefully before making a reservation.</p>
+        <div class="cancel-tiers">
+          <div class="tier">
+            <div class="tier-label">7+ Days Before Arrival</div>
+            <p>Refundable, subject to a processing fee &mdash; or convert your deposit to a gift certificate for future use at no additional fee.</p>
+          </div>
+          <div class="tier">
+            <div class="tier-label">2&ndash;7 Days Before Arrival</div>
+            <p>Non-refundable. Can only be converted to a gift certificate at half the value of the original deposit.</p>
+          </div>
+          <div class="tier">
+            <div class="tier-label">Within 2 Days / No-Show</div>
+            <p>No refund. No-show reservations and early departures also do not receive any refund, regardless of the reason.</p>
+          </div>
+        </div>
+        <div class="fine-print">
+          <p>All refunds are subject to a 6% processing fee, regardless of why your plans changed or current factors impacting travel on the Big Sur coast. Any credit card changes to your deposit or stay will also result in a 6% processing fee.</p>
+          <p>Keep in mind that we cannot guarantee road or weather conditions &mdash; including fog, rain, hail, lack of streetlights, falling rocks, lightning strikes, animals on the highway, lack of GPS signal, or lack of cell service.</p>
+        </div>
+      </div>
+
+      <p class="thanks-note">"Thank you for your understanding. We are just a small, family-operated business &mdash; not a mega-corporation with thousands of properties. Please try to be as kind to our small staff as we try to be to our guests and visitors."</p>
+    </div>
+  </section>
+
+  <!-- CHECK-IN / OUT -->
+  <section class="section-pad" aria-labelledby="checkin-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Good to Know</p>
+        <h2 id="checkin-heading">Check-In &amp; Check-Out</h2>
+      </div>
+      <div class="essentials-list">
+        <div class="essential-item"><strong>Check-In</strong><p>Begins at 4pm. If a room is vacant and clean prior to 4pm, we're happy to check you in early.</p></div>
+        <div class="essential-item"><strong>Check-Out</strong><p>11am. Late check-outs up to 3pm are charged a half-day rate; after 3pm, a full-day rate applies.</p></div>
+        <div class="essential-item"><strong>In-Room Comforts</strong><p>Rooms include down comforters, but do not have telephones or televisions.</p></div>
+        <div class="essential-item"><strong>Occupancy</strong><p>All rooms accommodate up to 2 people.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHEN VISITING BIG SUR -->
+  <section class="section-pad why-section" aria-labelledby="visiting-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Protecting This Coast</p>
+        <h2 id="visiting-heading">When Visiting Big Sur</h2>
+        <p>The following rules are in effect throughout Big Sur, both for your own safety and to protect the plants and animals that live here.</p>
+      </div>
+      <div class="rules-grid">
+        <div class="rule-card">
+          <span class="icon">&#128062;</span>
+          <h4>Wildlife Protection</h4>
+          <p>Harassment or disturbance of wild animals is prohibited by federal law.</p>
+        </div>
+        <div class="rule-card">
+          <span class="icon">&#127961;</span>
+          <h4>Leave No Trace</h4>
+          <p>Collecting shells, rocks, wood, plants, or animals is not allowed. All features of this reserve are protected by law.</p>
+        </div>
+        <div class="rule-card">
+          <span class="icon">&#128293;</span>
+          <h4>Fire &amp; Smoking</h4>
+          <p>Smoking is not permitted in buildings. Fires of all types are prohibited.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="book" aria-labelledby="cta-heading">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--sand);">Reserve Your Stay</p>
+      <h2 id="cta-heading">Ready to Book Your Room?</h2>
+      <p>Check current rates and availability, then reserve directly for the best rate.</p>
+      <div class="cta-row">
+        <a href="#" class="btn btn-primary">Book Your Room Online</a>
+        <a href="tel:+18318770926" class="btn btn-outline">Call (831) 877-0926</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Lucia Lodge</div>
+        <p>62400 Highway 1<br>Big Sur, CA 93920</p>
+        <p style="margin-top:12px;">(831) 877-0926</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Plan Your Stay</h5>
+        <ul>
+          <li><a href="RatesReservation.html">Reservations</a></li>
+          <li><a href="directions.html">Directions</a></li>
+          <li><a href="https://roads.dot.ca.gov/">Road Conditions</a></li>
+          <li><a href="RatesReservation.html">Cancellation Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:stay@lucialodge.com">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Lucia Lodge. All rights reserved. Family owned since 1937.</span>
+      <span>Design concept for lucialodge.com</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-book"><a href="#book-section">Check Availability</a></div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+<script src="nav.js"></script>
+</body>
+</html>
