@@ -1043,6 +1043,65 @@
     overflow:hidden; 
     clip:rect(0 0 0 0); 
   }
+  /* ============ VIDEO RESPONSIVE ============ */
+.video-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(28,50,38,0.12);
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-wrapper figcaption {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 1rem;
+  color: var(--forest-deep);
+  font-family: var(--serif);
+  letter-spacing: 0.02em;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .video-wrapper {
+    padding: 0 12px;
+  }
+  .video-wrapper figcaption {
+    font-size: 0.85rem;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-wrapper {
+    padding: 0 8px;
+  }
+  .video-wrapper figcaption {
+    font-size: 0.75rem;
+    margin-top: 10px;
+  }
+  .video-container {
+    border-radius: 4px;
+  }
+}
 </style>
 <link rel="stylesheet" href="nav.css">
 </head>
@@ -1052,7 +1111,7 @@
 <!-- ============ NAVIGATION ============ -->
 <header class="site-nav" id="siteNav">
   <div class="wrap">
-    <a href="index.html" class="logo">Lucia Lodge<span>BIG SUR · CALIFORNIA</span></a>
+    <a href="index.html" class="logo"><img src="media/home/logo.jpeg" alt="Lucia Lodge"></a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
     <nav class="nav-links" id="navLinks">
       <a href="rooms.html">Rooms</a>
@@ -1260,12 +1319,19 @@
         <img src="media/home/slider/8-partial-ocean-view-1.png" alt="Guest room interior with ocean view at Lucia Lodge">
       </div>
       <br> <br>
-      <div class="" style="text-align: center;">
-        <figure>
-        <iframe src="https://www.youtube.com/embed/cZDjYyePDzk"  referrerpolicy="strict-origin-when-cross-origin" width="800" height="450"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- VIDEO SECTION -->
+<div class="video-wrapper reveal">
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/cZDjYyePDzk" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
   <figcaption><strong>Lucia Lodge in Big Sur (Honeymoon Cottage & Hotel Review)</strong></figcaption>
-      </figure>
-      </div>
+</div>
     </div>
   </section>
 
@@ -1329,15 +1395,12 @@
       <div class="testi-wrap reveal" role="region" aria-roledescription="carousel" aria-label="Guest testimonials">
         <div class="testi-slide active">
           <p class="quote">"We've stayed at plenty of coastal hotels, but nothing compares to watching the sunset from our balcony with nothing but ocean between us and the horizon."</p>
-          <p class="testi-meta"><strong>Sample review</strong> &middot; representative of guest feedback &middot; Google</p>
         </div>
         <div class="testi-slide">
           <p class="quote">"The history of the place makes it feel different from a typical hotel &mdash; you can tell the same family has cared for this land for generations."</p>
-          <p class="testi-meta"><strong>Sample review</strong> &middot; representative of guest feedback &middot; TripAdvisor</p>
         </div>
         <div class="testi-slide">
           <p class="quote">"Simple, quiet, and the view alone was worth the drive down Highway 1. The free breakfast was a lovely touch before a full day of exploring."</p>
-          <p class="testi-meta"><strong>Sample review</strong> &middot; representative of guest feedback &middot; Booking.com</p>
         </div>
         <div class="testi-dots" id="testiDots">
           <button class="active" aria-label="Show review 1"></button>
