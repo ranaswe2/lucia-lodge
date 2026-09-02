@@ -321,42 +321,42 @@
       linear-gradient(0deg, rgba(20,37,28,0.85) 0%, rgba(20,37,28,0.15) 45%, rgba(20,37,28,0.35) 100%);
   }
   
-  .hero-slide:nth-child(1) {
+  /* .hero-slide:nth-child(1) {
     background-image: url("media/home/slider/1-lucia-lodge-cabins-1-10.jpg");
-  }
+  } */
   
-  .hero-slide:nth-child(2) {
+  .hero-slide:nth-child(1) {
     background-image: url("media/home/slider/2-lucia-lodge-ocean-view-cabins-6-10.jpg");
   }
   
-  .hero-slide:nth-child(3) {
+  .hero-slide:nth-child(2) {
     background-image: url("media/home/slider/3-lucia-lodge-ocean-view-big-sur.jpg");
   }
-  .hero-slide:nth-child(4) {
+  .hero-slide:nth-child(3) {
     background-image: url("media/home/slider/4-honeymoon-1.png");
   }
-  .hero-slide:nth-child(5) {
+  .hero-slide:nth-child(4) {
     background-image: url("media/home/slider/5-honeymoon-3.png");
   }
-  .hero-slide:nth-child(6) {
+  .hero-slide:nth-child(5) {
     background-image: url("media/home/slider/6-oceanview-3.png");
   }
-  .hero-slide:nth-child(7) {
+  .hero-slide:nth-child(6) {
     background-image: url("media/home/slider/7-oceanview-2.png");
   }
-  .hero-slide:nth-child(8) {
+  .hero-slide:nth-child(7) {
     background-image: url("media/home/slider/8-partial-ocean-view-1.png");
   }
-  .hero-slide:nth-child(9) {
+  .hero-slide:nth-child(8) {
     background-image: url("media/home/slider/9-partial-ocean-view-3.png");
   }
-  .hero-slide:nth-child(10) {
+  .hero-slide:nth-child(9) {
     background-image: url("media/home/slider/10-mountainview-1.png");
   }
-  .hero-slide:nth-child(11) {
+  .hero-slide:nth-child(10) {
     background-image: url("media/home/slider/11-mountainview-2.png");
   }
-  .hero-slide:nth-child(12) {
+  .hero-slide:nth-child(11) {
     background-image: url("media/home/slider/12-mountainview-extra-bed-3.png");
   }
 
@@ -1184,7 +1184,7 @@
       <div class="hero-slide"></div>
       <div class="hero-slide"></div>
       <div class="hero-slide"></div>
-      <div class="hero-slide"></div>
+      <!-- <div class="hero-slide"></div> -->
     </div>
     
     <div class="hero-content">
@@ -1207,8 +1207,6 @@
         <button class="slider-dot" data-slide="7" aria-label="Slide 8"></button>
         <button class="slider-dot" data-slide="8" aria-label="Slide 9"></button>
         <button class="slider-dot" data-slide="9" aria-label="Slide 10"></button>
-        <button class="slider-dot" data-slide="10" aria-label="Slide 11"></button>
-        <button class="slider-dot" data-slide="11" aria-label="Slide 12"></button>
       </div>
       <button class="slider-btn" id="nextSlide" aria-label="Next slide">&#10095;</button>
     </div>
@@ -1638,7 +1636,7 @@
 <script>
   // ============ HERO SLIDER ============
   let currentSlide = 0;
-  const totalSlides = 12;
+  const totalSlides = 11;
   const slidesContainer = document.getElementById('heroSlides');
   const dots = document.querySelectorAll('.slider-dot');
   
@@ -1673,7 +1671,7 @@
   // Auto-slide every 5 seconds
   let autoSlide = setInterval(() => {
     goToSlide(currentSlide + 1);
-  }, 3000);
+  }, 5000);
   
   // Pause auto-slide on hover
   const heroSection = document.querySelector('.hero');
@@ -1683,7 +1681,7 @@
   heroSection.addEventListener('mouseleave', () => {
     autoSlide = setInterval(() => {
       goToSlide(currentSlide + 1);
-    }, 3000);
+    }, 5000);
   });
 
   // ============ NAV SCROLL (No longer needed but kept for compatibility) ============
