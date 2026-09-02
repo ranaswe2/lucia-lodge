@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Food & Dining | Lucia Lodge, Big Sur</title>
+<title>Food Service | Lucia Lodge, Big Sur</title>
 <meta name="description" content="Complimentary grab-and-go breakfast at Lucia Lodge, plus nearby dining at Treebones Resort and Gorda Springs Resort along Big Sur's Highway 1.">
 <link rel="canonical" href="https://lucialodge.com/food-and-dining">
 <link rel="icon" type="image/x-icon" href="media/home/favicon.ico">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Food & Dining | Lucia Lodge, Big Sur">
+<meta property="og:title" content="Food Service | Lucia Lodge, Big Sur">
 <meta property="og:description" content="Complimentary grab-and-go breakfast at Lucia Lodge, plus nearby dining at Treebones Resort and Gorda Springs Resort.">
 <meta property="og:url" content="https://lucialodge.com/food-and-dining">
 <meta property="og:site_name" content="Lucia Lodge">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Food & Dining | Lucia Lodge, Big Sur">
+<meta name="twitter:title" content="Food Service | Lucia Lodge, Big Sur">
 <meta name="twitter:description" content="Complimentary grab-and-go breakfast at Lucia Lodge, plus nearby dining at Treebones Resort and Gorda Springs Resort.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lucialodge.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Food & Dining", "item": "https://lucialodge.com/food-and-dining" }
+    { "@type": "ListItem", "position": 2, "name": "Food Service", "item": "https://lucialodge.com/food-and-dining" }
   ]
 }
 </script>
@@ -69,7 +69,7 @@
   *{ box-sizing:border-box; margin:0; padding:0; }
   html{ scroll-behavior:smooth; }
   @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } *{ animation-duration:.001ms !important; transition-duration:.001ms !important; } }
-  body{ font-family:var(--sans); color:var(--ink); background:var(--cream); line-height:1.6; -webkit-font-smoothing:antialiased; }
+  body{ font-family:var(--sans); color:var(--ink); background:var(--cream); line-height:1.6; -webkit-font-smoothing:antialiased; padding-top: 70px;}
   img{ max-width:100%; display:block; }
   a{ color:inherit; text-decoration:none; }
   ul{ list-style:none; }
@@ -85,24 +85,39 @@
   .section-head h1, .section-head h2{ font-size:clamp(1.9rem,3.4vw,2.7rem); margin-top:12px; }
   .section-head p{ margin-top:16px; color:#54544a; font-size:1.02rem; max-width:64ch; }
 
-  /* header.site-nav{ position:fixed; top:0; left:0; right:0; z-index:50; padding:16px 0; background:var(--cream); box-shadow:0 2px 24px rgba(28,50,38,0.08); }
-  header.site-nav .wrap{ display:flex; align-items:center; justify-content:space-between; }
-  .logo{ font-family:var(--serif); font-size:1.5rem; color:var(--forest-deep); letter-spacing:.04em; display:flex; flex-direction:column; line-height:1; }
-  .logo span{ font-family:var(--sans); font-size:.56rem; letter-spacing:.32em; font-weight:500; margin-top:4px; color:var(--ocean); }
-  .nav-links{ display:flex; align-items:center; gap:32px; }
-  .nav-links a{ font-size:.8rem; letter-spacing:.06em; color:var(--forest-deep); opacity:.85; }
-  .nav-links a:hover, .nav-links a.current{ opacity:1; color:var(--copper); }
-  .nav-links a.book-btn{ background:var(--copper); color:#fff !important; padding:10px 20px; border-radius:var(--radius); font-weight:600; opacity:1; }
-  .nav-links a.book-btn:hover{ background:#a05f34; }
-  .nav-toggle{ display:none; background:none; border:none; color:var(--forest-deep); font-size:1.6rem; }
-  @media (max-width:920px){
-    .nav-links{ position:fixed; top:0; right:0; height:100vh; width:min(320px,80vw); background:var(--forest-deep); flex-direction:column; justify-content:center; align-items:flex-start; gap:24px; padding:40px; transform:translateX(100%); transition:transform .4s ease; }
-    .nav-links.open{ transform:translateX(0); }
-    .nav-links a{ color:var(--sand) !important; font-size:1rem; }
-    .nav-toggle{ display:block; z-index:60; }
-  } */
+  /* ANNOUNCEMENT BAR */
+  .announce-bar{ background:var(--forest-deep); color:var(--sand); text-align:center; padding:10px 20px; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:600; }
 
-  .page-hero{ position:relative; height:52vh; min-height:360px; overflow:hidden; display:flex; align-items:flex-end;
+
+  /* ESSENTIALS TEXT BLOCK */
+  .essentials-text{ padding:80px 0 60px; text-align:center; }
+  .essentials-text p{ font-size:1.08rem; color:#3a3a34; margin-bottom:14px; }
+  .essentials-text p:last-child{ margin-bottom:0; font-weight:600; color:var(--forest-deep); }
+
+  /* GUEST ESSENTIALS BLOCK */
+  .guest-block{ padding:20px 0 90px; }
+  .guest-flex{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+  @media (max-width:860px){ .guest-flex{ grid-template-columns:1fr; } }
+  .guest-photo img{ border-radius:12px; aspect-ratio:4/5; object-fit:cover; }
+  .guest-copy h2{ font-size:clamp(1.7rem,3vw,2.3rem); margin:12px 0 4px; }
+  .guest-copy h3.subtitle{ font-style:italic; font-weight:400; color:var(--copper); font-size:1.5rem; margin-bottom:22px; }
+  .hours-list{ margin-bottom:20px; }
+  .hours-list p{ font-size:.95rem; color:#454540; margin-bottom:4px; }
+  .hours-list p strong{ color:var(--forest-deep); }
+  .info-line{ font-size:.95rem; color:#454540; margin-bottom:4px; }
+  .info-line a{ color:var(--copper); text-decoration:underline; }
+  .divider-block{ margin:26px 0 20px; padding-top:24px; border-top:1px solid var(--line); }
+  .divider-block h4{ font-size:1.15rem; margin-bottom:8px; }
+
+  .btn{ display:inline-block; padding:14px 28px; font-size:.82rem; letter-spacing:.04em; font-weight:600; border-radius:40px; transition:all .25s ease; }
+  .btn-solid-light{ background:#fff; color:var(--forest-deep); }
+  .btn-solid-light:hover{ background:var(--sand); }
+  .btn-dark-pill{ display:inline-flex; align-items:center; gap:12px; background:var(--forest-deep); color:#fff; border-radius:40px; padding:8px 8px 8px 22px; font-size:.82rem; }
+  .btn-dark-pill .circle{ width:30px; height:30px; border-radius:50%; background:var(--copper); display:flex; align-items:center; justify-content:center; font-size:.9rem; }
+  .btn-dark-pill:hover .circle{ background:#a05f34; }
+
+
+  .page-hero{ position:relative; height:75vh; min-height:360px; overflow:hidden; display:flex; align-items:flex-end;
     background: radial-gradient(ellipse at 70% 15%, rgba(184,112,63,0.3), transparent 55%), linear-gradient(180deg, #4a7a63 0%, #2f5a44 35%, #1c3226 75%, #14251c 100%); }
   .page-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(20,37,28,0.85) 0%, rgba(20,37,28,0.15) 55%, rgba(20,37,28,0.3) 100%); }
   .page-hero-content{ position:relative; z-index:2; color:#fff; padding:0 32px 50px; max-width:var(--max); margin:0 auto; width:100%; }
@@ -181,7 +196,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <!-- <a href="RatesReservation.html">Rates &amp; Reservations</a> -->
-      <a href="FoodDining.html">Food &amp; Dining</a>
+      <a href="food-service.html">Food Service</a>
       <a href="activities.html">Activities</a>
       <!-- <a href="gallery.html">Gallery</a> -->
       <!-- Resources Dropdown -->
@@ -205,107 +220,62 @@
 <main>
 
   <section class="page-hero" aria-label="Food and dining at Lucia Lodge">
-    <img src="media/food/foodtop.jpg" alt="Ocean view from a bed at Lucia Lodge, looking out over the cliffs and Pacific Ocean">
+    <img src="media/food/dining-at-treebones-1024x424-ezremove.png" alt="Ocean view from a bed at Lucia Lodge, looking out over the cliffs and Pacific Ocean">
     <div class="page-hero-content">
-      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Food &amp; Dining</p>
-      <p class="eyebrow" style="color:var(--sand);">Guest Essentials &amp; Nearby Dining</p>
-      <h1>Food &amp; Dining</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Food Service</p>
+      <h1>Dining at the Heart of <em>Treebones</em></h1>
+        <p class="attribution">— Chef Kyle Walker</p>
     </div>
   </section>
 
-  <div class="notice-banner">
+<!-- <div class="announce-bar">Save $$ by Booking Directly Here</div> -->
+  <!-- <div class="notice-banner">
     <strong>Please Note:</strong> Lucia Lodge's own restaurant and store are temporarily closed following a fire. The lodge itself remains open, and nearby dining is available a short drive south.
-  </div>
+  </div> -->
+
+  <!-- ESSENTIALS TEXT -->
+  <section class="essentials-text" id="food-service">
+    <div class="wrap" style="max-width:760px;">
+      <p>Grab-n-Go breakfast (pastry, fruit, juice, hardboiled egg, coffee/tea)</p>
+      <p>Coffee and tea in each room</p>
+      <p>Ice and microwave in common area 24/7</p>
+      <p>Coolers available by request for those who bring their own food</p>
+      <p>All other food service is 12 miles south and 20 miles north.</p>
+    </div>
+  </section>
 
   <!-- GUEST ESSENTIALS -->
-  <section class="section-pad" id="dining">
+  <section class="guest-block">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Guest Essentials</p>
-        <h2>What's Included During Your Stay</h2>
-        <p>All other food service is roughly 12 miles south and 20 miles north of the lodge &mdash; here's what's available on-site in the meantime.</p>
-      </div>
-      <div class="essentials-list">
-        <div class="essential-item">
-          <span class="icon">&#9749;</span>
-          <p><strong>Grab-n-Go Breakfast</strong>Pastry, fruit, juice, a hardboiled egg, and coffee or tea &mdash; complimentary for every guest, every morning.</p>
+      <div class="guest-flex">
+        <div class="guest-photo">
+          <img src="media/food/treebones-sushi-bar-1024x683.webp" alt="Sushi chefs preparing Omakase at the Treebones Resort sushi bar near Lucia Lodge">
         </div>
-        <div class="essential-item">
-          <span class="icon">&#9750;</span>
-          <p><strong>Coffee &amp; Tea In-Room</strong>Available in every room throughout your stay.</p>
+        <div class="guest-copy">
+          <p class="eyebrow">Guest Essentials</p>
+          <h2>Treebones Resort $$$</h2>
+          <h3 class="subtitle">Remote Stay</h3>
+          <div class="hours-list">
+            <p><strong>Lunch</strong> 12&ndash;2 Daily, Walk-ins Welcome</p>
+            <p><strong>Dinner</strong> 5&ndash;8 Daily, Reservations Requested</p>
+            <p><strong>Omakase Sushi</strong> 5pm &amp; 7pm Tue&ndash;Sat, Reservations Required</p>
+          </div>
+          <p class="info-line">11.9 miles south. Turn off is just before Gorda.</p>
+          <p class="info-line"><a href="https://www.treebonesresort.com/">Website</a> &middot; <a href="https://www.exploretock.com/treebonesresort">Reserve a Table</a></p>
+          <p class="info-line">(805) 927-2390</p>
+          <p class="info-line"><a href="mailto:frontdesk@treebones.com">frontdesk@treebones.com</a></p>
+          <p class="info-line"><a href="mailto:massage@treebones.com">massage@treebones.com</a></p>
+
+          <div class="divider-block">
+            <h4>Gorda Springs Resort $$</h4>
+            <p class="info-line">Breakfast, lunch, and dinner. Walk-ins welcome.</p>
+            <p class="info-line">12.3 miles south.</p>
+            <p class="info-line"><a href="https://gordaspringsresort.com/">Website</a></p>
+            <p class="info-line">(805) 927-3918</p>
+          </div>
+
+          <a href="tel:+18059273918" class="btn-dark-pill" style="margin-top:10px;">Reserve A Table <span class="circle">&rarr;</span></a>
         </div>
-        <div class="essential-item">
-          <span class="icon">&#10052;</span>
-          <p><strong>Ice &amp; Microwave</strong>Available 24/7 in the common area for all guests.</p>
-        </div>
-        <div class="essential-item">
-          <span class="icon">&#128721;</span>
-          <p><strong>Coolers by Request</strong>Available for guests bringing their own food.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEARBY DINING -->
-  <section class="section-pad why-section" aria-labelledby="nearby-heading">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Nearby Dining</p>
-        <h2 id="nearby-heading">Two Options, Just South on Highway 1</h2>
-        <p>Both are a short scenic drive from the lodge &mdash; reservations recommended, especially for dinner.</p>
-      </div>
-      <div class="dining-grid">
-
-        <article class="dine-card">
-          <div class="dine-photo">
-            <img src="media/reservations/treeboneresort.webp" alt="Dining room at Treebones Resort near Lucia Lodge, overlooking the Big Sur coast">
-          </div>
-          <div class="dine-body">
-            <div class="dine-top">
-              <h3>Treebones Resort</h3>
-              <span class="price-tag">$$$</span>
-            </div>
-            <span class="dine-dist">11.9 Miles South &middot; Turnoff just before Gorda</span>
-            <ul class="dine-hours">
-              <li><span class="label">Lunch, Daily 12&ndash;2pm</span><span class="req" style="color:#5c5c52;">Walk-Ins Welcome</span></li>
-              <li><span class="label">Dinner, Daily 5&ndash;8pm</span><span class="req">Reservations Requested</span></li>
-              <li><span class="label">Omakase Sushi, 5pm &amp; 7pm Tue&ndash;Sat</span><span class="req">Reservations Required</span></li>
-            </ul>
-            <div class="dine-contact">
-              <div>805-927-2390</div>
-              <div><a href="mailto:frontdesk@treebones.com">frontdesk@treebones.com</a></div>
-              <div><a href="mailto:massage@treebones.com">massage@treebones.com</a> (spa)</div>
-            </div>
-            <div class="dine-actions">
-              <a href="https://www.exploretock.com/treebonesresort" class="btn btn-primary">Reserve a Table</a>
-              <a href="https://www.treebonesresort.com/dine/the-lodge-restaurant/" class="btn btn-outline-dark">Visit Website</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="dine-card">
-          <div class="dine-photo">
-            <img src="media/reservations/gordaresort.webp" alt="Dining area at Gorda Springs Resort near Lucia Lodge on the Big Sur coast">
-          </div>
-          <div class="dine-body">
-            <div class="dine-top">
-              <h3>Gorda Springs Resort</h3>
-              <span class="price-tag">$$</span>
-            </div>
-            <span class="dine-dist">12.3 Miles South</span>
-            <ul class="dine-hours">
-              <li><span class="label">Breakfast, Lunch &amp; Dinner</span><span class="req" style="color:#5c5c52;">Walk-Ins Welcome</span></li>
-            </ul>
-            <div class="dine-contact">
-              <div>805-927-3918</div>
-            </div>
-            <div class="dine-actions">
-              <a href="https://gordaspringsresort.com/m/account" class="btn btn-primary">Reserve a Table</a>
-              <a href="https://gordaspringsresort.com/" class="btn btn-outline-dark">Visit Website</a>
-            </div>
-          </div>
-        </article>
-
       </div>
     </div>
   </section>
