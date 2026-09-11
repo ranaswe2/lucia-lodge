@@ -350,15 +350,15 @@
   }
   .hero-slide:nth-child(8) {
     background-image: url("media/home/slider/9-partial-ocean-view-3.png");
-  }
-  .hero-slide:nth-child(9) {
-    background-image: url("media/home/slider/10-mountainview-1.png");
   } */
   .hero-slide:nth-child(6) {
     background-image: url("media/images/Room8-Interior/room8-bedroom-seating-area-ocean-view.jpg");
   }
   .hero-slide:nth-child(7) {
     background-image: url("media/images/Room9-Interior/room9-bedroom-exposed-beam-ceiling.jpg");
+  }
+  .hero-slide:nth-child(8) {
+    background-image: url("media//images/Room10-Interior/room10-lounge-area-ocean-view.jpg");
   }
 
   /* Fallback if images don't exist */
@@ -1174,8 +1174,8 @@
       <div class="hero-slide"></div>
       <div class="hero-slide"></div>
       <div class="hero-slide"></div>
-      <!-- <div class="hero-slide"></div>
       <div class="hero-slide"></div>
+      <!-- <div class="hero-slide"></div>
       <div class="hero-slide"></div>
       <div class="hero-slide"></div> -->
       <!-- <div class="hero-slide"></div> -->
@@ -1198,8 +1198,8 @@
         <button class="slider-dot" data-slide="4" aria-label="Slide 5"></button>
         <button class="slider-dot" data-slide="5" aria-label="Slide 6"></button>
         <button class="slider-dot" data-slide="6" aria-label="Slide 7"></button>
-        <!-- <button class="slider-dot" data-slide="7" aria-label="Slide 8"></button>
-        <button class="slider-dot" data-slide="8" aria-label="Slide 9"></button>
+        <button class="slider-dot" data-slide="7" aria-label="Slide 8"></button>
+        <!-- <button class="slider-dot" data-slide="8" aria-label="Slide 9"></button>
         <button class="slider-dot" data-slide="9" aria-label="Slide 10"></button> -->
       </div>
       <button class="slider-btn" id="nextSlide" aria-label="Next slide">&#10095;</button>
@@ -1641,7 +1641,7 @@
 <script>
   // ============ HERO SLIDER ============
   let currentSlide = 0;
-  const totalSlides = 7;
+  const totalSlides = 8;
   const slidesContainer = document.getElementById('heroSlides');
   const dots = document.querySelectorAll('.slider-dot');
   let direction = 1; // 1 for forward, -1 for backward
