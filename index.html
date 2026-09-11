@@ -345,12 +345,6 @@
   .hero-slide:nth-child(5) {
     background-image: url("media/home/slider/7-oceanview-2.png");
   }
-  /* .hero-slide:nth-child(7) {
-    background-image: url("media/home/slider/8-partial-ocean-view-1.png");
-  }
-  .hero-slide:nth-child(8) {
-    background-image: url("media/home/slider/9-partial-ocean-view-3.png");
-  } */
   .hero-slide:nth-child(6) {
     background-image: url("media/images/Room8-Interior/room8-bedroom-seating-area-ocean-view.jpg");
   }
@@ -360,7 +354,15 @@
   .hero-slide:nth-child(8) {
     background-image: url("media//images/Room10-Interior/room10-lounge-area-ocean-view.jpg");
   }
-
+ .hero-slide:nth-child(9) {
+    background-image: url("media/images/Room1-Interior/lucia-lodge-room-1-ocean-view-bedroom.jpg");
+  }
+  .hero-slide:nth-child(10) {
+    background-image: url("media/images/Room2-Interior/room2-lucia-lodge-ocean-view-bedroom-big-sur.jpg");
+  } 
+  .hero-slide:nth-child(11) {
+    background-image: url("media/images/Room7-Interior/room7-bedroom-open-beam-vaulted-ceiling.jpg");
+  } 
   /* Fallback if images don't exist */
   /* .hero-slide:nth-child(2) {
     background-color: var(--ocean);
@@ -1098,9 +1100,11 @@
   @media (max-width:900px){ .intro-flex{ grid-template-columns:1fr; } }
   .intro-copy p{ margin-bottom:16px; color:#454540; font-size:1.02rem; }
   .intro-copy .drop{ font-family:var(--serif); font-size:2.6rem; float:left; line-height:.8; padding-right:8px; padding-top:4px; color:var(--copper); }
-  .intro-photo img{ border-radius:var(--radius); }
+  .intro-photo img{ border-radius:var(--radius);  max-width: 67% !important;}
   .intro-note{ background:var(--sand); border-left:3px solid var(--copper); padding:18px 22px; margin-top:22px; font-size:.92rem; color:#454540; }
-
+@media (max-width: 1180px) {
+  .intro-photo img{ max-width: 100% !important;}
+}
   /* ROOM CATEGORY CARDS */
   .cat-block{ border-top:1px solid var(--line); padding:80px 0; }
   .cat-block:first-of-type{ border-top:none; }
@@ -1175,9 +1179,9 @@
       <div class="hero-slide"></div>
       <div class="hero-slide"></div>
       <div class="hero-slide"></div>
-      <!-- <div class="hero-slide"></div>
       <div class="hero-slide"></div>
-      <div class="hero-slide"></div> -->
+      <div class="hero-slide"></div>
+      <div class="hero-slide"></div>
       <!-- <div class="hero-slide"></div> -->
     </div>
     
@@ -1199,8 +1203,9 @@
         <button class="slider-dot" data-slide="5" aria-label="Slide 6"></button>
         <button class="slider-dot" data-slide="6" aria-label="Slide 7"></button>
         <button class="slider-dot" data-slide="7" aria-label="Slide 8"></button>
-        <!-- <button class="slider-dot" data-slide="8" aria-label="Slide 9"></button>
-        <button class="slider-dot" data-slide="9" aria-label="Slide 10"></button> -->
+        <button class="slider-dot" data-slide="8" aria-label="Slide 9"></button>
+        <button class="slider-dot" data-slide="9" aria-label="Slide 10"></button>
+        <button class="slider-dot" data-slide="10" aria-label="Slide 11"></button>
       </div>
       <button class="slider-btn" id="nextSlide" aria-label="Next slide">&#10095;</button>
     </div>
@@ -1236,7 +1241,7 @@
           <div class="intro-note">Rooms are rustic and unplugged by design &mdash; no phones or TVs. Free WiFi and a complimentary grab-and-go breakfast are available to every guest each morning.</div>
         </div>
         <div class="intro-photo">
-          <img src="media/images/Exterior-building/lucia-lodge-ocean-view-cabins-big-sur.jpg" alt="Vaulted wood ceiling and ocean-facing sitting area in the Lucia Lodge honeymoon cottage">
+          <img src="media/images/Exterior-building/lucia-lodge-big-sur-coast-view.jpg" alt="Vaulted wood ceiling and ocean-facing sitting area in the Lucia Lodge honeymoon cottage">
         </div>
       </div>
     </div>
@@ -1641,7 +1646,7 @@
 <script>
   // ============ HERO SLIDER ============
   let currentSlide = 0;
-  const totalSlides = 8;
+  const totalSlides = 11;
   const slidesContainer = document.getElementById('heroSlides');
   const dots = document.querySelectorAll('.slider-dot');
   let direction = 1; // 1 for forward, -1 for backward
