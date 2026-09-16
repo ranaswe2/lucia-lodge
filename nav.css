@@ -255,6 +255,7 @@ header.site-nav .wrap{
     transition:transform 0.4s ease;
     overflow-y: auto;
     box-shadow: -8px 0 30px rgba(0,0,0,0.2);
+    z-index: 55;
   }
   .nav-links.open{ 
     transform:translateX(0); 
