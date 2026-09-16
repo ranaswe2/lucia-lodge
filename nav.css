@@ -229,54 +229,62 @@ header.site-nav .wrap{
 }
 
 /* ============ MOBILE (below 920px) ============ */
-@media (max-width:920px) {
+/* ============ MOBILE (below 920px) ============ */
+@media (max-width: 920px) {
   header.site-nav {
     padding: 8px 0;
+    z-index: 70;                 /* keep header above the sliding panel */
   }
-  
+
+  header.site-nav .wrap {
+    position: relative;          /* anchor for the toggle if needed */
+  }
+
   .logo img {
     height: 38px;
     max-height: 38px;
   }
-  
-  .nav-links{
-    position:fixed; 
-    top:0; 
-    right:0; 
-    height:100vh; 
-    width:min(300px,80vw);
-    background:var(--forest-deep); 
-    flex-direction:column; 
-    justify-content:center;
-    align-items:flex-start; 
-    gap:18px; 
-    padding:40px 32px;
-    transform:translateX(100%); 
-    transition:transform 0.4s ease;
+
+  /* ---------- Slide-in panel ---------- */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(300px, 80vw);
+    background: var(--forest-deep);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 40px 32px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
     overflow-y: auto;
-    box-shadow: -8px 0 30px rgba(0,0,0,0.2);
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.2);
     z-index: 55;
   }
-  .nav-links.open{ 
-    transform:translateX(0); 
+  .nav-links.open {
+    transform: translateX(0);
   }
-  .nav-links > a{ 
-    color:var(--sand) !important; 
-    font-size:1rem; 
+  .nav-links > a {
+    color: var(--sand) !important;
+    font-size: 1rem;
   }
-  .nav-links a.book-btn{
-    background:var(--copper);
-    color:#fff !important;
-    padding:12px 24px;
-    font-size:0.9rem;
+  .nav-links a.book-btn {
+    background: var(--copper);
+    color: #fff !important;
+    padding: 12px 24px;
+    font-size: 0.9rem;
   }
-  
+
+  /* ---------- Dropdown ---------- */
   .dropdown {
     width: 100%;
   }
   .dropdown > a {
-    color:var(--sand) !important;
-    font-size:1rem;
+    color: var(--sand) !important;
+    font-size: 1rem;
     padding: 4px 0;
   }
   .dropdown > a::after {
@@ -300,7 +308,7 @@ header.site-nav .wrap{
     display: none;
   }
   .dropdown-content a {
-    color: rgba(237,231,221,0.8) !important;
+    color: rgba(237, 231, 221, 0.8) !important;
     padding: 6px 0;
     font-size: 0.9rem;
     white-space: normal;
@@ -308,7 +316,7 @@ header.site-nav .wrap{
   .dropdown-content a:not(:last-child)::after {
     left: 0;
     right: 0;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
   }
   .dropdown-content a:hover {
     background: transparent;
@@ -320,23 +328,86 @@ header.site-nav .wrap{
   .dropdown.active > a::after {
     transform: rotate(180deg);
   }
-  .nav-toggle{ 
-    display:block; 
-    z-index:60; 
+
+  /* ---------- Hamburger → X toggle ---------- */
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 60;                     /* above the panel when closed */
+    color: var(--forest-deep);       /* dark bars on cream header */
+    transition: color 0.3s ease;
+  }
+
+  /* Hide the literal ☰ glyph inside the button and draw our own bars */
+  .nav-toggle {
+    font-size: 0;                    /* collapses the &#9776; text node */
+    overflow: hidden;
+  }
+  .nav-toggle::before,
+  .nav-toggle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease, top 0.3s ease, background 0.3s ease;
+  }
+  .nav-toggle::before { top: 14px; }
+  .nav-toggle::after  { top: 24px; }
+
+  /* Middle bar — use the button's own background on a 3rd element.
+     Since the button has no child span, draw the middle bar with a
+     tiny gradient line: */
+  .nav-toggle {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 22px 2px;
+    background-position: center center;
+  }
+
+  /* ---------- Open state: white X over the dark panel ---------- */
+  .nav-toggle[aria-expanded="true"] {
+    color: #fff;                     /* white bars / X */
+    z-index: 60;                     /* stay above .nav-links (55) */
+  }
+  .nav-toggle[aria-expanded="true"]::before {
+    top: 19px;
+    transform: translateX(-50%) rotate(45deg);
+    background: #fff;
+  }
+  .nav-toggle[aria-expanded="true"]::after {
+    top: 19px;
+    transform: translateX(-50%) rotate(-45deg);
+    background: #fff;
+  }
+  /* Hide middle bar when open */
+  .nav-toggle[aria-expanded="true"] {
+    background-image: none;
   }
 }
 
 /* ============ SMALL MOBILE (below 480px) ============ */
-@media (max-width:480px) {
+@media (max-width: 480px) {
   header.site-nav .wrap {
     padding: 0 16px;
   }
-  
+
   .logo img {
     height: 32px;
     max-height: 32px;
   }
-  
+
   .nav-links {
     width: 85vw;
     padding: 30px 24px;
@@ -357,12 +428,12 @@ header.site-nav .wrap{
 }
 
 /* ============ VERY SMALL (below 360px) ============ */
-@media (max-width:360px) {
+@media (max-width: 360px) {
   .logo img {
     height: 28px;
     max-height: 28px;
   }
-  
+
   .nav-links {
     padding: 24px 18px;
     gap: 14px;
