@@ -1766,10 +1766,10 @@
       const isOpen = navLinks.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', String(isOpen));
     });
-    // navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    //   navLinks.classList.remove('open');
-    //   navToggle.setAttribute('aria-expanded', 'false');
-    // }));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
   }
 
   // ============ TESTIMONIAL CAROUSEL ============
