@@ -161,7 +161,14 @@
   .footer-grid li{ margin-bottom:9px; }
   .footer-grid a:hover{ color:#fff; }
   .footer-logo{ font-family:var(--serif); font-size:1.4rem; color:#fff; margin-bottom:10px; }
-  .footer-bottom{ border-top:1px solid rgba(237,231,221,0.15); padding-top:22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:.75rem; }
+    .footer-bottom{ 
+    border-top:1px solid rgba(237,231,221,0.15); 
+    padding-top:24px; 
+    text-align: center;
+    flex-wrap:wrap; 
+    gap:12px; 
+    font-size:0.76rem; 
+  }
 
   .mobile-book{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:55; background:var(--forest-deep); padding:14px 20px; box-shadow:0 -4px 16px rgba(0,0,0,0.2); }
   .mobile-book a{ display:block; text-align:center; background:var(--copper); color:#fff; padding:14px; border-radius:var(--radius); font-size:.85rem; letter-spacing:.06em; font-weight:600; }
@@ -249,7 +256,6 @@
 </header>
 
 <main>
-
   <section class="page-hero" aria-label="About Lucia Lodge">
     <img src="media/home/view-from/1.lodge-coastal-cabins-highway-1.jpg" alt="Ocean view from a bed at Lucia Lodge, looking out over the cliffs and Pacific Ocean">
     <div class="page-hero-content">
@@ -271,7 +277,7 @@
       <div class="intro-flex">
         <div class="intro-copy">
           <p><span class="drop">L</span>ucia Lodge is an historic cliff-side resort located in the heart of the Big Sur coast. The lodge is perched on the cliffs above the Pacific Ocean, remote from other establishments, boasting what we are often told are the best ocean views on the coast.</p>
-          <p>The Lodge opened in 1937, coinciding with the opening of Highway 1, a road that famous author John Steinbeck helped build while working as a laborer. The land was originally homesteaded in the 1800s by the Harlan family.</p>
+          <p>The Lodge opened in 1930, coinciding with the opening of Highway 1, a road that famous author John Steinbeck helped build while working as a laborer. The land was originally homesteaded in the 1800s by the Harlan family.</p>
           <p><a href="https://lucialodge.client.innroad.com/" style="color:var(--forest-deep); font-weight:600; text-decoration:underline;">Reserve a room here for best savings.</a></p>
         </div>
         <div class="intro-photo">
@@ -374,8 +380,11 @@
     <div class="wrap">
       <div class="masonry" id="masonryGrid">
 
+        <div class="g-item" data-cat="ocean" data-full="" data-caption="Ratched">
+          <img src="media/history/ratched.jpg" alt="Ratched" loading="lazy">
+        <div class="g-caption"><span>Sunset over the Pacific</span></div>
+        </div>
         <div class="g-item" data-cat="ocean" data-full="" data-caption="Sunset over the Pacific from the Lucia Lodge cliffs (placeholder — swap in real photography)">
-           
           <img src="media/activities/activities.sand2.jpg" alt="Sunset over the Pacific Ocean from the cliffs at Lucia Lodge">
           <div class="g-caption"><span>Sunset over the Pacific</span></div>
         </div>
@@ -594,8 +603,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Lucia Lodge. All rights reserved. Family owned since 1937.</span>
-      <span>Design concept for lucialodge.com</span>
+      <span>&copy; 2026 Lucia Lodge. All rights reserved. Family owned since 1930.</span>
+       
     </div>
   </div>
 </footer>
@@ -675,6 +684,5 @@
     });
   });
 </script>
-<script src="nav.js"></script>
 </body>
 </html>
